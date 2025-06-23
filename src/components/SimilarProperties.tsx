@@ -30,8 +30,8 @@ const SimilarProperties = () => {
   ];
 
   return (
-    <div className="backdrop-blur-xl bg-white/5 rounded-2xl p-6 border border-white/10 shadow-2xl">
-      <h3 className="text-xl font-bold mb-4 flex items-center space-x-2">
+    <div className="backdrop-blur-xl bg-black/30 rounded-2xl p-5 border border-white/10 shadow-2xl">
+      <h3 className="text-lg font-bold mb-4 flex items-center space-x-2 text-white">
         <Home className="w-5 h-5 text-pink-400" />
         <span>Similar Properties You Might Like</span>
       </h3>
@@ -40,33 +40,33 @@ const SimilarProperties = () => {
         Neighborhood recommendations based on your preferences
       </div>
       
-      <div className="space-y-4">
+      <div className="space-y-3">
         {properties.map((property, index) => (
           <div 
             key={index}
-            className="flex space-x-4 p-4 rounded-xl backdrop-blur-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/10"
+            className="flex space-x-4 p-4 rounded-xl backdrop-blur-xl bg-black/20 border border-white/10 hover:bg-black/40 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/10"
           >
             <img 
               src={property.image} 
               alt={property.title}
-              className="w-20 h-16 rounded-lg object-cover"
+              className="w-16 h-12 rounded-lg object-cover flex-shrink-0"
             />
             <div className="flex-1 min-w-0">
-              <h4 className="font-semibold text-white truncate">{property.title}</h4>
-              <p className="text-sm text-gray-400">{property.location}</p>
+              <h4 className="font-semibold text-white truncate text-sm">{property.title}</h4>
+              <p className="text-xs text-gray-400">{property.location}</p>
               <p className="text-xs text-gray-500">{property.details}</p>
               <div className="flex items-center justify-between mt-2">
-                <span className="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded backdrop-blur-lg border border-green-500/20">
+                <span className="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded backdrop-blur-xl border border-green-500/20">
                   {property.status}
                 </span>
-                <span className="font-bold text-white">{property.price}</span>
+                <span className="font-bold text-white text-sm">{property.price}</span>
               </div>
             </div>
           </div>
         ))}
       </div>
       
-      <button className="w-full mt-4 py-3 rounded-xl backdrop-blur-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 font-medium hover:bg-pink-500/20 hover:border-pink-400/30 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/25">
+      <button className="w-full mt-4 py-3 rounded-xl backdrop-blur-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 font-medium hover:bg-pink-500/20 hover:border-pink-400/30 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/25 text-sm">
         View Details
       </button>
     </div>
