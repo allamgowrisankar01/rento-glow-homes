@@ -11,20 +11,21 @@ import Footer from "../components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-black text-white relative overflow-x-hidden">
-      {/* Pure black background with subtle gradient overlay */}
-      <div className="absolute inset-0 bg-black"></div>
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900/10 to-purple-900/5"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-pink-500/5 via-transparent to-violet-500/5"></div>
+    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-black to-gray-900 text-white relative overflow-x-hidden">
+      {/* Modern gradient background */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/20 via-black to-pink-900/10"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-pink-500/5 via-transparent to-violet-500/5"></div>
       
       <div className="relative z-10">
         <Header />
-        <main className="pb-20 px-3 max-w-sm mx-auto sm:max-w-md lg:max-w-lg">
+        <main className="pb-24 px-4 max-w-md mx-auto lg:max-w-2xl space-y-6">
           <ImageGallery />
-          <div className="space-y-3">
+          <div className="space-y-6">
             <ApartmentInfo />
-            <MoveInDetails />
-            <AboutProperty />
+            <div className="grid gap-6">
+              <MoveInDetails />
+              <AboutProperty />
+            </div>
             <PremiumAmenities />
             <ContactOwner />
             <SimilarProperties />

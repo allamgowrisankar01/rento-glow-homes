@@ -1,5 +1,5 @@
 
-import { Image as ImageIcon } from 'lucide-react';
+import { Image as ImageIcon, Play } from 'lucide-react';
 
 const ImageGallery = () => {
   const images = [
@@ -12,23 +12,29 @@ const ImageGallery = () => {
   ];
 
   return (
-    <div className="relative py-4">
-      <div className="grid grid-cols-3 gap-2 rounded-2xl overflow-hidden backdrop-blur-xl bg-black/30 p-3 border border-white/10 shadow-2xl">
+    <div className="relative">
+      <div className="grid grid-cols-3 gap-3 rounded-3xl overflow-hidden bg-white/5 p-4 border border-white/10 shadow-2xl backdrop-blur-xl">
         {images.slice(0, 6).map((image, index) => (
           <div 
             key={index} 
-            className={`relative overflow-hidden rounded-xl ${index === 0 ? 'col-span-2 row-span-2' : ''}`}
+            className={`relative overflow-hidden rounded-2xl group ${index === 0 ? 'col-span-2 row-span-2' : ''}`}
           >
             <img 
               src={image} 
               alt={`Apartment view ${index + 1}`}
-              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            {index === 0 && (
+              <button className="absolute bottom-4 right-4 p-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white/30">
+                <Play className="w-5 h-5 text-white" />
+              </button>
+            )}
             {index === 5 && (
-              <div className="absolute inset-0 backdrop-blur-md bg-black/80 flex items-center justify-center border border-white/10">
+              <div className="absolute inset-0 backdrop-blur-md bg-black/70 flex items-center justify-center border border-white/20 rounded-2xl">
                 <div className="text-center">
-                  <div className="text-xl font-bold mb-1">+9</div>
-                  <div className="text-xs opacity-80">Photos</div>
+                  <div className="text-2xl font-bold mb-2">+9</div>
+                  <div className="text-sm opacity-80">More Photos</div>
                 </div>
               </div>
             )}
@@ -36,10 +42,10 @@ const ImageGallery = () => {
         ))}
       </div>
       
-      <button className="mt-4 w-full py-3 rounded-xl backdrop-blur-xl bg-black/20 border border-pink-500/30 text-pink-400 font-medium hover:bg-pink-500/10 hover:border-pink-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/25">
-        <div className="flex items-center justify-center space-x-2">
-          <ImageIcon className="w-4 h-4" />
-          <span>View all photos</span>
+      <button className="mt-6 w-full py-4 rounded-2xl bg-gradient-to-r from-pink-500/10 to-violet-500/10 border border-pink-500/20 text-pink-400 font-semibold hover:from-pink-500/20 hover:to-violet-500/20 hover:border-pink-400/40 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/25 backdrop-blur-xl">
+        <div className="flex items-center justify-center space-x-3">
+          <ImageIcon className="w-5 h-5" />
+          <span>View All Photos</span>
         </div>
       </button>
     </div>
