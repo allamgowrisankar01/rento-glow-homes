@@ -3,7 +3,7 @@ import { Calendar, Home } from 'lucide-react';
 
 const MoveInDetails = () => {
   return (
-    <div className="backdrop-blur-md bg-white/10 rounded-2xl p-6 border border-white/20 shadow-xl">
+    <div className="backdrop-blur-xl bg-white/5 rounded-2xl p-6 border border-white/10 shadow-2xl">
       <h3 className="text-xl font-bold mb-4 flex items-center space-x-2">
         <Calendar className="w-5 h-5 text-pink-400" />
         <span>Move-in Details</span>

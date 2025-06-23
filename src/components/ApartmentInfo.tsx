@@ -3,7 +3,7 @@ import { MapPin, Home, Calendar } from 'lucide-react';
 
 const ApartmentInfo = () => {
   return (
-    <div className="backdrop-blur-md bg-white/10 rounded-2xl p-6 border border-white/20 shadow-xl">
+    <div className="backdrop-blur-xl bg-white/5 rounded-2xl p-6 border border-white/10 shadow-2xl">
       <div className="space-y-4">
         <div>
           <h2 className="text-2xl font-bold mb-2">Luxury 2BHK Apartment in Lodha Park</h2>
@@ -20,7 +20,7 @@ const ApartmentInfo = () => {
         <div className="flex items-baseline space-x-2">
           <span className="text-3xl font-bold text-white">₹65,000</span>
           <span className="text-gray-400">/month</span>
-          <div className="ml-auto bg-gradient-to-r from-pink-500 to-violet-500 px-3 py-1 rounded-full text-xs font-semibold">
+          <div className="ml-auto bg-gradient-to-r from-pink-500 to-violet-500 px-3 py-1 rounded-full text-xs font-semibold shadow-lg shadow-pink-500/30">
             Zero Brokerage
           </div>
         </div>

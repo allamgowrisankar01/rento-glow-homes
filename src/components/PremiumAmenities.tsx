@@ -14,7 +14,7 @@ const PremiumAmenities = () => {
   ];
 
   return (
-    <div className="backdrop-blur-md bg-white/10 rounded-2xl p-6 border border-white/20 shadow-xl">
+    <div className="backdrop-blur-xl bg-white/5 rounded-2xl p-6 border border-white/10 shadow-2xl">
       <h3 className="text-xl font-bold mb-4 flex items-center space-x-2">
         <Star className="w-5 h-5 text-pink-400" />
         <span>Premium Amenities</span>
@@ -24,7 +24,7 @@ const PremiumAmenities = () => {
         {amenities.map((amenity, index) => (
           <div 
             key={index}
-            className="flex items-center space-x-3 p-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/10"
+            className="flex items-center space-x-3 p-3 rounded-xl backdrop-blur-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/10"
           >
             <div className="text-2xl">{amenity.icon}</div>
             <span className="text-sm font-medium">{amenity.name}</span>

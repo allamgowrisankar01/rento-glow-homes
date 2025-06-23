@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react';
 
 const AboutProperty = () => {
   return (
-    <div className="backdrop-blur-md bg-white/10 rounded-2xl p-6 border border-white/20 shadow-xl">
+    <div className="backdrop-blur-xl bg-white/5 rounded-2xl p-6 border border-white/10 shadow-2xl">
       <h3 className="text-xl font-bold mb-4">About this property</h3>
       
       <div className="text-gray-300 text-sm leading-relaxed">
@@ -18,7 +18,7 @@ const AboutProperty = () => {
         </p>
       </div>
       
-      <button className="mt-4 flex items-center space-x-2 text-pink-400 hover:text-pink-300 transition-colors duration-300">
+      <button className="mt-4 flex items-center space-x-2 text-pink-400 hover:text-pink-300 transition-colors duration-300 hover:shadow-lg hover:shadow-pink-500/20 p-2 rounded-lg backdrop-blur-lg bg-white/5 border border-white/5">
         <span className="font-medium">Read More</span>
         <ChevronDown className="w-4 h-4" />
       </button>

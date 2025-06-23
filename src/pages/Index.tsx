@@ -11,20 +11,26 @@ import Footer from '../components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-black text-white">
-      <Header />
-      <main className="pb-20">
-        <ImageGallery />
-        <div className="px-4 space-y-6">
-          <ApartmentInfo />
-          <MoveInDetails />
-          <AboutProperty />
-          <PremiumAmenities />
-          <ContactOwner />
-          <SimilarProperties />
-        </div>
-      </main>
-      <Footer />
+    <div className="min-h-screen bg-black text-white relative">
+      {/* Animated background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-purple-900 opacity-60"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-pink-500/20 via-transparent to-violet-500/20"></div>
+      
+      <div className="relative z-10">
+        <Header />
+        <main className="pb-20">
+          <ImageGallery />
+          <div className="px-4 space-y-6">
+            <ApartmentInfo />
+            <MoveInDetails />
+            <AboutProperty />
+            <PremiumAmenities />
+            <ContactOwner />
+            <SimilarProperties />
+          </div>
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 };

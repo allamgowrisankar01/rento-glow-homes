@@ -3,10 +3,10 @@ import { Menu, Bell, User } from 'lucide-react';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-black/20 border-b border-white/10">
+    <header className="sticky top-0 z-50 backdrop-blur-xl bg-black/30 border-b border-white/5 shadow-lg">
       <div className="flex items-center justify-between px-4 py-3">
         <div className="flex items-center space-x-3">
-          <button className="p-2 rounded-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+          <button className="p-2 rounded-xl backdrop-blur-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20">
             <Menu className="w-5 h-5" />
           </button>
           <h1 className="text-xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent tracking-wide">
@@ -14,11 +14,11 @@ const Header = () => {
           </h1>
         </div>
         <div className="flex items-center space-x-3">
-          <button className="p-2 rounded-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 relative">
+          <button className="p-2 rounded-xl backdrop-blur-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 relative hover:shadow-lg hover:shadow-pink-500/20">
             <Bell className="w-5 h-5" />
-            <div className="absolute -top-1 -right-1 w-3 h-3 bg-pink-500 rounded-full animate-pulse"></div>
+            <div className="absolute -top-1 -right-1 w-3 h-3 bg-pink-500 rounded-full animate-pulse shadow-lg shadow-pink-500/50"></div>
           </button>
-          <button className="p-2 rounded-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+          <button className="p-2 rounded-xl backdrop-blur-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20">
             <User className="w-5 h-5" />
           </button>
         </div>
