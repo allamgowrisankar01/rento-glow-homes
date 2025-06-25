@@ -16,19 +16,20 @@ const Index = () => {
   return (
     <div className={`min-h-screen relative overflow-x-hidden transition-all duration-500 font-['Roboto'] ${
       isDark 
-        ? 'bg-gradient-to-br from-gray-950 via-black to-gray-900 text-white' 
+        ? 'bg-[#362c5d] text-white' 
         : 'bg-gradient-to-br from-pink-25 via-pink-50 to-rose-75 text-[#362c5d]'
     }`}>
-      {/* Theme-based gradient background */}
+      {/* Theme-based background effects */}
       {isDark ? (
         <>
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/20 via-black to-pink-900/10"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-pink-500/5 via-transparent to-violet-500/5"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#423572]/30 via-[#362c5d] to-[#2a2048]/50"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-[#ff1c67]/5 via-transparent to-[#423572]/10"></div>
         </>
       ) : (
         <>
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-pink-100/40 via-pink-25 to-rose-50/30"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-pink-100/50 via-pink-50 to-rose-100/30"></div>
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-[#ff1c67]/8 via-transparent to-[#362c5d]/8"></div>
+          <div className="absolute inset-0 backdrop-blur-[0.5px] bg-white/10"></div>
         </>
       )}
       
