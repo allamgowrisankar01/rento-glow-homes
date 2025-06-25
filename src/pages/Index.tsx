@@ -1,3 +1,4 @@
+
 import { useTheme } from "../contexts/ThemeContext";
 import Header from "../components/Header";
 import ImageGallery from "../components/ImageGallery";
@@ -16,7 +17,7 @@ const Index = () => {
     <div className={`min-h-screen relative overflow-x-hidden transition-all duration-500 font-['Roboto'] ${
       isDark 
         ? 'bg-gradient-to-br from-gray-950 via-black to-gray-900 text-white' 
-        : 'bg-gradient-to-br from-pink-50 via-pink-25 to-rose-50 text-gray-800'
+        : 'bg-gradient-to-br from-pink-25 via-pink-50 to-rose-75 text-[#362c5d]'
     }`}>
       {/* Theme-based gradient background */}
       {isDark ? (
@@ -26,8 +27,8 @@ const Index = () => {
         </>
       ) : (
         <>
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-pink-200/30 via-pink-50 to-rose-100/20"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-[#ff1c67]/5 via-transparent to-[#362c5d]/5"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-pink-100/40 via-pink-25 to-rose-50/30"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-[#ff1c67]/8 via-transparent to-[#362c5d]/8"></div>
         </>
       )}
       
