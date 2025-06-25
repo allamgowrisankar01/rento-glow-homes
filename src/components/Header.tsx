@@ -19,7 +19,7 @@ const Header = () => {
               ? 'bg-[#362c5d] shadow-[8px_8px_16px_#2a2048,_-8px_-8px_16px_#423572] hover:shadow-[12px_12px_24px_#2a2048,_-12px_-12px_24px_#423572] hover:scale-105 active:shadow-[inset_4px_4px_8px_#2a2048,_inset_-4px_-4px_8px_#423572] active:scale-95' 
               : 'bg-white/80 backdrop-blur-md shadow-[8px_8px_16px_rgba(0,0,0,0.15),_-8px_-8px_16px_rgba(255,255,255,0.8)] hover:shadow-[12px_12px_24px_rgba(0,0,0,0.2),_-12px_-12px_24px_rgba(255,255,255,0.9)] hover:scale-105 active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.15),_inset_-4px_-4px_8px_rgba(255,255,255,0.8)] active:scale-95'
           }`}>
-            <Menu className={`w-5 h-5 ${isDark ? 'text-white' : 'text-gray-700'}`} />
+            <Menu className={`w-5 h-5 ${isDark ? 'text-white' : 'text-gray-800'}`} />
           </button>
           <h1 className="text-2xl font-bold bg-gradient-to-r from-[#ff1c67] to-[#362c5d] bg-clip-text text-transparent tracking-wide font-['Montserrat']">
             RentoMate
@@ -32,7 +32,7 @@ const Header = () => {
               ? 'bg-[#362c5d] shadow-[8px_8px_16px_#2a2048,_-8px_-8px_16px_#423572] hover:shadow-[12px_12px_24px_#2a2048,_-12px_-12px_24px_#423572] hover:scale-105 active:shadow-[inset_4px_4px_8px_#2a2048,_inset_-4px_-4px_8px_#423572] active:scale-95' 
               : 'bg-white/80 backdrop-blur-md shadow-[8px_8px_16px_rgba(0,0,0,0.15),_-8px_-8px_16px_rgba(255,255,255,0.8)] hover:shadow-[12px_12px_24px_rgba(0,0,0,0.2),_-12px_-12px_24px_rgba(255,255,255,0.9)] hover:scale-105 active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.15),_inset_-4px_-4px_8px_rgba(255,255,255,0.8)] active:scale-95'
           }`}>
-            <Bell className={`w-5 h-5 ${isDark ? 'text-white' : 'text-gray-700'}`} />
+            <Bell className={`w-5 h-5 ${isDark ? 'text-white' : 'text-gray-800'}`} />
             <div className={`absolute -top-1 -right-1 w-3 h-3 bg-[#ff1c67] rounded-full animate-pulse shadow-lg shadow-pink-500/50 ring-2 ${isDark ? 'ring-[#362c5d]' : 'ring-white'}`}></div>
           </button>
           <button className={`p-3 rounded-2xl transition-all duration-300 transform ${
@@ -40,7 +40,7 @@ const Header = () => {
               ? 'bg-[#362c5d] shadow-[8px_8px_16px_#2a2048,_-8px_-8px_16px_#423572] hover:shadow-[12px_12px_24px_#2a2048,_-12px_-12px_24px_#423572] hover:scale-105 active:shadow-[inset_4px_4px_8px_#2a2048,_inset_-4px_-4px_8px_#423572] active:scale-95' 
               : 'bg-white/80 backdrop-blur-md shadow-[8px_8px_16px_rgba(0,0,0,0.15),_-8px_-8px_16px_rgba(255,255,255,0.8)] hover:shadow-[12px_12px_24px_rgba(0,0,0,0.2),_-12px_-12px_24px_rgba(255,255,255,0.9)] hover:scale-105 active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.15),_inset_-4px_-4px_8px_rgba(255,255,255,0.8)] active:scale-95'
           }`}>
-            <User className={`w-5 h-5 ${isDark ? 'text-white' : 'text-gray-700'}`} />
+            <User className={`w-5 h-5 ${isDark ? 'text-white' : 'text-gray-800'}`} />
           </button>
         </div>
       </div>

@@ -16,10 +16,10 @@ const ImageGallery = () => {
 
   return (
     <div className="relative">
-      <div className={`grid grid-cols-3 gap-3 rounded-3xl overflow-hidden p-4 border shadow-2xl backdrop-blur-xl ${
+      <div className={`grid grid-cols-3 gap-3 rounded-3xl overflow-hidden p-4 border backdrop-blur-xl ${
         isDark 
-          ? 'bg-white/5 border-white/10' 
-          : 'bg-white/80 border-gray-200/50'
+          ? 'bg-white/5 border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)]' 
+          : 'bg-white/80 border-gray-200/50 shadow-[0_20px_50px_rgba(0,0,0,0.15)]'
       }`}>
         {images.slice(0, 6).map((image, index) => (
           <div 
@@ -49,7 +49,7 @@ const ImageGallery = () => {
               }`}>
                 <div className="text-center">
                   <div className={`text-2xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-800'}`}>+9</div>
-                  <div className={`text-sm opacity-80 ${isDark ? 'text-white' : 'text-gray-600'}`}>More Photos</div>
+                  <div className={`text-sm opacity-80 ${isDark ? 'text-white' : 'text-gray-700'}`}>More Photos</div>
                 </div>
               </div>
             )}
@@ -57,11 +57,7 @@ const ImageGallery = () => {
         ))}
       </div>
       
-      <button className={`mt-6 w-full py-4 rounded-2xl font-semibold transition-all duration-300 backdrop-blur-xl transform ${
-        isDark
-          ? 'bg-[#362c5d] shadow-[8px_8px_16px_#2a2048,_-8px_-8px_16px_#423572] hover:shadow-[12px_12px_24px_#2a2048,_-12px_-12px_24px_#423572] hover:scale-105 active:shadow-[inset_4px_4px_8px_#2a2048,_inset_-4px_-4px_8px_#423572] active:scale-95 text-white'
-          : 'bg-white/80 shadow-[8px_8px_16px_rgba(0,0,0,0.15),_-8px_-8px_16px_rgba(255,255,255,0.8)] hover:shadow-[12px_12px_24px_rgba(0,0,0,0.2),_-12px_-12px_24px_rgba(255,255,255,0.9)] hover:scale-105 active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.15),_inset_-4px_-4px_8px_rgba(255,255,255,0.8)] active:scale-95 text-gray-700'
-      }`}>
+      <button className={`mt-6 w-full py-4 rounded-2xl font-semibold transition-all duration-300 backdrop-blur-xl transform bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg hover:shadow-xl hover:from-pink-600 hover:to-purple-700 hover:scale-105 active:scale-95`}>
         <div className="flex items-center justify-center space-x-3">
           <ImageIcon className="w-5 h-5" />
           <span>View All Photos</span>
